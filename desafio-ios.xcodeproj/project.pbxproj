@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E53A5CBEF26EA3BCF16CE85 /* Pods_desafio_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36DBBEA19D38365B1BB5FABE /* Pods_desafio_ios.framework */; };
 		895C7CDB207001E000D32DCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895C7CDA207001E000D32DCE /* AppDelegate.swift */; };
 		895C7CDD207001E000D32DCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895C7CDC207001E000D32DCE /* ViewController.swift */; };
 		895C7CE0207001E000D32DCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895C7CDE207001E000D32DCE /* Main.storyboard */; };
 		895C7CE2207001E000D32DCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 895C7CE1207001E000D32DCE /* Assets.xcassets */; };
 		895C7CE5207001E000D32DCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 895C7CE3207001E000D32DCE /* LaunchScreen.storyboard */; };
+		895C7CED2070030200D32DCE /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 895C7CEC2070030100D32DCE /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36DBBEA19D38365B1BB5FABE /* Pods_desafio_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_desafio_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		895C7CD7207001E000D32DCE /* desafio-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		895C7CDA207001E000D32DCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		895C7CDC207001E000D32DCE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		895C7CE1207001E000D32DCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		895C7CE4207001E000D32DCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		895C7CE6207001E000D32DCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		895C7CEC2070030100D32DCE /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
+		8D8154704AF177A4FC5395F1 /* Pods-desafio-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-desafio-ios/Pods-desafio-ios.release.xcconfig"; sourceTree = "<group>"; };
+		DE0AE40795D9C0D038358D6C /* Pods-desafio-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafio-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-desafio-ios/Pods-desafio-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E53A5CBEF26EA3BCF16CE85 /* Pods_desafio_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F9EE8F365911F747D3B1B45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36DBBEA19D38365B1BB5FABE /* Pods_desafio_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		895C7CCE207001E000D32DCE = {
 			isa = PBXGroup;
 			children = (
+				895C7CEC2070030100D32DCE /* Podfile */,
 				895C7CD9207001E000D32DCE /* desafio-ios */,
 				895C7CD8207001E000D32DCE /* Products */,
+				D3BE258BB0E5D26BD9D3C0AE /* Pods */,
+				1F9EE8F365911F747D3B1B45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +82,15 @@
 			path = "desafio-ios";
 			sourceTree = "<group>";
 		};
+		D3BE258BB0E5D26BD9D3C0AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE0AE40795D9C0D038358D6C /* Pods-desafio-ios.debug.xcconfig */,
+				8D8154704AF177A4FC5395F1 /* Pods-desafio-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 895C7CE9207001E000D32DCE /* Build configuration list for PBXNativeTarget "desafio-ios" */;
 			buildPhases = (
+				5C3C773B2B04C48AC06976CB /* [CP] Check Pods Manifest.lock */,
 				895C7CD3207001E000D32DCE /* Sources */,
 				895C7CD4207001E000D32DCE /* Frameworks */,
 				895C7CD5207001E000D32DCE /* Resources */,
+				4FEB94003E8892CCF0EB5857 /* [CP] Embed Pods Frameworks */,
+				81C079F22854BE763BC5800B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,11 +155,84 @@
 			files = (
 				895C7CE5207001E000D32DCE /* LaunchScreen.storyboard in Resources */,
 				895C7CE2207001E000D32DCE /* Assets.xcassets in Resources */,
+				895C7CED2070030200D32DCE /* Podfile in Resources */,
 				895C7CE0207001E000D32DCE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FEB94003E8892CCF0EB5857 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-desafio-ios/Pods-desafio-ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Localize_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-desafio-ios/Pods-desafio-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C3C773B2B04C48AC06976CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-desafio-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81C079F22854BE763BC5800B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-desafio-ios/Pods-desafio-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		895C7CD3207001E000D32DCE /* Sources */ = {
@@ -272,6 +375,7 @@
 		};
 		895C7CEA207001E000D32DCE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE0AE40795D9C0D038358D6C /* Pods-desafio-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +391,7 @@
 		};
 		895C7CEB207001E000D32DCE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D8154704AF177A4FC5395F1 /* Pods-desafio-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
