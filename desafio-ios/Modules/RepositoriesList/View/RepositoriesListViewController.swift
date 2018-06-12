@@ -1,4 +1,4 @@
-//
+    //
 //  RepositoriesListViewController.swift
 //  uagit
 //
@@ -15,7 +15,7 @@ class RepositoriesListViewController: UIViewController {
     @IBOutlet weak var navigationBar: NavigationBar!
     @IBOutlet weak var tableView: UITableView!
     
-    fileprivate let repositoryPresenter = RepositoryPresenter()
+    fileprivate let repositoryPresenter = RepositoryPresenter()             
     
     override func viewDidLoad() {
         super.viewDidLoad()
